@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+    font-family: Arial;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    gap: 5px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+.safe { background: lightgreen; }
+.unknown { background: lightgray; }
+.danger { background: red; }
+.agent { background: blue; color: white; }
